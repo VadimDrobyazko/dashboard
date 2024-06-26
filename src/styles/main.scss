@@ -1,3 +1,30 @@
+@import "./_block/reset";
+@import "./_block/container";
+@import "./_block/header";
+@import "./_block/nav";
+@import "./_block/dashboard";
+@import "./_block/table";
+
 body {
-  margin: 0;
+  display: flex;
+
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+
+  background: #fafbff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+
+  @media (min-width: 320px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
